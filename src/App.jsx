@@ -1,18 +1,24 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
 import './App.css'
-import NavBar from './components/Navbar/NavBar'
-import ItemListContainer from './components/ItemListContainer/ItemListContainer'
+import NavBar from './components/NavBar/NavBar'
+import ItemDetailContainer from './Containers/ItemDetailContainer/ItemDetailContainer'
+import { ItemListContainer } from './Containers/ItemListContainer/ItemListContainer'
+
+
 
 function App() {
 
   return (
-    <div className="container">
-      <NavBar />
-      <ItemListContainer greeting= {"Aqui se van cargar todos los productos mediante Api"} />
-    </div>
+    <BrowserRouter>
+      <NavBar/>
+      <Routes>
+        <Route path="/" element={<ItemListContainer/>} />
+        <Route path="/detail/:id" element={<ItemDetailContainer/>} />
+        <Route path="/category/:id" element={<ItemListContainer/>} />
+      </Routes>
+    </BrowserRouter>
   )
+
 }
 
 export default App
