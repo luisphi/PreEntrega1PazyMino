@@ -23,13 +23,13 @@ export default function ItemCount({stock, addToCart}) {
 
   return (
     <>
-        <h3>Cantidad a comprar</h3>
+    <h3>Cantidad</h3>
     <div id="item__count">
-        <button onClick={add}>+</button>
-        <p>{count}</p>
         <button onClick={less}>-</button>
+        <p>{count}</p>
+        <button onClick={add}>+</button>
     </div>
-    <button id="addToCart" onClick={HandleAdd}>Agregar a carrito</button>
+    <button id="addToCart" onClick={HandleAdd}>Comprar</button>
     </>
   )
 }

@@ -1,3 +1,4 @@
+//Se toma las imágenes de esta tienda de licores https://www.magicovino.com
 const licores = [{
   id: 1,
   name: "Campari",
@@ -58,7 +59,7 @@ const licores = [{
 {
   id: 8,
   name: "Cerveza Corona",
-  img: "https://santacostilla.co/wp-content/uploads/2020/05/cerveza-corona-extra-santa-costilla.jpg",
+  img: "https://ecuaviche.com.ec/wp-content/uploads/2020/12/corona.jpg",
   price: 7,
   category: "Cervezas",
   stock: 120

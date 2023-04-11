@@ -19,9 +19,8 @@ function ItemDetailContainer() {
   return (
     <>
     {loading ?
-      <img id="img__loading" src="https://acegif.com/wp-content/uploads/loading-13.gif" alt="" />
-    :
-    <ItemDetail product={product}/>
+      <img id="img__loading" src="https://usagif.com/wp-content/uploads/loading-2.gif" alt="" />
+                              : <ItemDetail product={product}/>
     }
     </> 
   )

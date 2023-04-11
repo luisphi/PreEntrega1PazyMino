@@ -29,8 +29,8 @@ export const ItemListContainer = () => {
     <>
     { loading ? 
     <div id="div__loading">
-      <img id="img__loading" src="https://acegif.com/wp-content/uploads/loading-13.gif" alt="" />
-      <h4 id="text__waiting">Loading</h4>
+      <img id="img__loading" src="https://usagif.com/wp-content/uploads/loading-2.gif" alt="" />
+      <h4 id="text__waiting">Cargando</h4>
     </div>
     :
       <ItemList products={products} />
