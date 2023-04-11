@@ -12,10 +12,10 @@ function NavBar() {
             </Link>
             <nav>
                 <ul id='navMenu'>
-                    <li><Link to="/category/Aperitivos">Aperitivos</Link></li>
-                    <li><Link to="/category/Cervezas">Cervezas</Link></li>
-                    <li><Link to="/category/Espumantes">Espumantes</Link></li>
                     <li><Link to="/category/Vinos">Vinos</Link></li>
+                    <li><Link to="/category/Aperitivos">Aperitivos</Link></li>
+                    <li><Link to="/category/Espumantes">Espumantes</Link></li>
+                    <li><Link to="/category/Cervezas">Cervezas</Link></li>
 
                     <li><CartWidget /></li>
                 </ul>
