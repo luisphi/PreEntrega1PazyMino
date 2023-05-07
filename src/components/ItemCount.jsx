@@ -10,17 +10,17 @@ const ItemCount = ({ data, id }) => {
   const [count, setCount] = useState(1);
 
   const addQty = () => {
-    setCount(count + 1);
+    if(count<data.stock )
+      setCount(count +1)    
   };
 
   const substractQty = () => {
-    setCount(count - 1);
+    if(count>1)
+       setCount(count-1);
   };
 
   const addToCart = () => {
     setCart((currItems) => {
-      console.log(currItems)
-      console.log(data)
       const isItemFound = currItems.find((item) => item.id === id);
       if (isItemFound) {
         return currItems.map((item) => {
@@ -44,14 +44,14 @@ const ItemCount = ({ data, id }) => {
         <p></p>
       </Center>
       <Center color='black'>
-        <Button size="md" color="#111F5F" bgColor={"white"} onClick={addQty}>
-          +
+        <Button size="md" color="#111F5F" bgColor={"white"} onClick={substractQty}>
+          -
         </Button>
         <Button size="sm" color="#111F5F" bgColor={"#CDC2A6"} onClick={() => addToCart()}>
           Añadir al carrito: {count}
         </Button>
-        <Button size="md" color="#111F5F" bgColor={"white"} onClick={substractQty}>
-          -
+        <Button size="md" color="#111F5F" bgColor={"white"} onClick={addQty}>
+          +
         </Button>
       </Center>
     </>

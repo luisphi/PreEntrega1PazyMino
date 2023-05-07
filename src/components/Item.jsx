@@ -28,7 +28,7 @@ const Item = ({ id, name, img, category, stock, description }) => {
                             <CardFooter className='card-footer'>
                                 <ButtonGroup spacing='2' className='btn-center'>
                                     <Button color="#111F5F" bgColor={"#CDC2A6"}>
-                                        <Link to={`/item/${id}`}>Ver Mas</Link>
+                                        <Link to={`/item/${id}`}>Ver Más</Link>
                                     </Button>
                                 </ButtonGroup>
                             </CardFooter>

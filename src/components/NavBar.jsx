@@ -13,13 +13,13 @@ const NavBar = () => {
                         <img src="/images/logo_habitanto.png" alt="Licores el gato" width={100} />
                     </Link>
                     <Box p="1" w="300" h="30">
-                        <Heading size="lg" color={"#CDC2A6"}> Licorería Gato </Heading>
+                        <Heading size="lg" color={"#CDC2A6"}> Licorería Gato Negro</Heading>
                     </Box>
                     <Spacer />
                     <Box p="1" w="300" h="30">
                         <Menu>
                             <Link to={"/"}>
-                                <MenuButton className="boton_menu" as={Button} size="lg" color="#111F5F" bgColor={"#CDC2A6"}>Inicio</MenuButton>
+                                <MenuButton className="boton_menu" as={Button} size="lg" color="#111F5F" bgColor={"#CDC2A6"}>Catálogo</MenuButton>
                             </Link>
                         </Menu>
                     </Box>
@@ -28,11 +28,17 @@ const NavBar = () => {
                         <Menu>
                             <MenuButton className="boton_category" as={Button} size="lg" color="#111F5F" bgColor={"#CDC2A6"}>Categorías</MenuButton>
                             <MenuList>
-                                <Link to={`/category/${"silla"}`} >
-                                    <MenuItem >Sillas</MenuItem>
+                                <Link to={`/category/${"Vinos"}`} >
+                                    <MenuItem >Vinos</MenuItem>
                                 </Link>
-                                <Link to={`/category/${"mesa"}`} >
-                                    <MenuItem >Mesas</MenuItem>
+                                <Link to={`/category/${"Aperitivos"}`} >
+                                    <MenuItem >Aperitivos</MenuItem>
+                                </Link>
+                                <Link to={`/category/${"Espumantes"}`} >
+                                    <MenuItem >Espumantes</MenuItem>
+                                </Link>
+                                <Link to={`/category/${"Cervezas"}`} >
+                                    <MenuItem >Cervezas</MenuItem>
                                 </Link>
                             </MenuList>
                         </Menu>

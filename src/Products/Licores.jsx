@@ -24,7 +24,6 @@ const licores = [{
   img: "https://www.magicovino.com/wp-content/uploads/2020/10/ambar.jpg",
   price: 38,
   category: "Vinos",
-
   stock: 11
 },
 {
