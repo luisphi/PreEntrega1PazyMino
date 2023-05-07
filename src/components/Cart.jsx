@@ -83,12 +83,12 @@ const Cart = () => {
     return (
       <>
         <Center p="25px">
-          <Heading size="md" color="#111F5F" className='heading'>Ups.. parece que el carro esta vacio</Heading>
+          <Heading size="md" color="#111F5F" className='heading'>No tiene ningún producto agregado al carrito</Heading>
         </Center>
         <Container className='vuelta_catalogo'>
           <Center>
             <Button size="md" color="#111F5F" bgColor={"#CDC2A6"}>
-              <Link to="/"> volver al catalogo </Link>
+              <Link to="/"> volver al catálogo </Link>
             </Button>
           </Center>
         </Container>

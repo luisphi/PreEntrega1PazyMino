@@ -7,7 +7,6 @@ import { collection, getDocs, getFirestore } from "firebase/firestore";
 const ItemListContainer = () => {
   const [muebles, setMuebles] = useState([]);
   const { category } = useParams();
-  console.log(category);
 
   useEffect(() => {
     const db = getFirestore();
