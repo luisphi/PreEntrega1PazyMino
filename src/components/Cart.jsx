@@ -44,7 +44,7 @@ const Cart = () => {
                     </CardHeader>
                   </Center>
                   <CardBody>
-                    <Image src={item.imagen} borderRadius='sm' />
+                    <Image src={item.img} borderRadius='sm' />
                     <Center>
                       <Text as="b">Cantidad: {item.quantity}</Text>
                     </Center>

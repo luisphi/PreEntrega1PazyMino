@@ -4,7 +4,7 @@ import { Card, CardBody, CardFooter, Button, Text, Image, ButtonGroup } from '@c
 import { Link } from 'react-router-dom';
 
 
-const Item = ({ id, name, imagen, category, stock, descripcion }) => {
+const Item = ({ id, name, img, category, stock, description }) => {
 
     return (
         <>
@@ -13,7 +13,7 @@ const Item = ({ id, name, imagen, category, stock, descripcion }) => {
                     <Center p="1rem">
                         <Card maxW='350px' className='card-main'>
                             <CardBody>
-                                <Image src={imagen} />
+                                <Image src={img} />
                                 <Stack mt='6' spacing='3'>
                                     <Heading size='md' color="#111F5F">{name}</Heading>
                                     <Text color="#111F5F" fontSize='18px'>

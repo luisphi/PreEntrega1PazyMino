@@ -5,27 +5,27 @@ import { useEffect, useState } from 'react';
 import { collection, getDocs, getFirestore } from "firebase/firestore";
 
 const ItemListContainer = () => {
-  const [muebles, setMuebles] = useState([]);
+  const [licores, setLicores] = useState([]);
   const { category } = useParams();
 
   useEffect(() => {
     const db = getFirestore();
-    const mueblesCollection = collection(db, "muebles");
-    getDocs(mueblesCollection).then((querySnapshot) => {
-      const muebles = querySnapshot.docs.map((doc) => ({
+    const licoresCollection = collection(db, "licores");
+    getDocs(licoresCollection).then((querySnapshot) => {
+      const licores = querySnapshot.docs.map((doc) => ({
         ...doc.data(),
         id: doc.id,
       }));
-      setMuebles(muebles);
+      setLicores(licores)
     });
-  }, []);
-  const catFilter = muebles.filter((mueble) => mueble.category === category);
+  }, [])
+  const catFilter = licores.filter((mueble) => mueble.category === category);
 
   return (
     <>
-      {category ? <ItemList muebles={catFilter} /> : <ItemList muebles={muebles} />};
+      {category ? <ItemList licores={catFilter} /> : <ItemList licores={licores} />};
     </>
   );
-};
+}
 
 export default ItemListContainer

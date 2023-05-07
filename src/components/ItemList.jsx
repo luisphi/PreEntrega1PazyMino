@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Stack } from '@chakra-ui/react';
 import Item from './Item';
 
-const ItemList = ({ muebles }) => {
+const ItemList = ({ licores }) => {
 
   console.log()
 
@@ -10,16 +10,16 @@ const ItemList = ({ muebles }) => {
     <>
       <Stack direction='row'>
         <Container maxW="container.sm" className="main-catalogue">
-          {muebles?.map((datos) => (
+          {licores?.map((datos) => (
             <Item
               key={datos.id}
               id={datos.id}
               name={datos.name}
-              descripcion={datos.descripcion}
+              description={datos.description}
               price={datos.price}
               stock={datos.stock}
               category={datos.category}
-              imagen={datos.imagen}
+              img={datos.img}
             />
           ))};
         </Container>

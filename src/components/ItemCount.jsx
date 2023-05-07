@@ -33,7 +33,7 @@ const ItemCount = ({ data, id }) => {
         });
       }
       else {
-        return [...currItems, { id: id, quantity: count, price: data.price, name: data.name, imagen: data.imagen }];
+        return [...currItems, { id: id, quantity: count, price: data.price, name: data.name, img: data.img }];
       }
     });
   };

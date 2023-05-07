@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 import Loading from './Loading';
 
 
-const ItemDetailed = ({ muebles, id }) => {
+const ItemDetailed = ({ licores, id }) => {
     const [loading, setLoading] = useState(true);
     useEffect(() => {
         setTimeout(() => {
@@ -23,21 +23,21 @@ const ItemDetailed = ({ muebles, id }) => {
             <Center p="100px">
                 <Card maxW='350px' className="card-main">
                     <CardBody>
-                        <Image src={muebles.imagen} />
+                        <Image src={licores.img} />
                         <Stack mt='6' spacing='3'>
-                            <Heading size='md' color='#111F5F'>{muebles.name}</Heading>
+                            <Heading size='md' color='#111F5F'>{licores.name}</Heading>
                             <Text color='#111F5F' fontSize='15px'>
-                                Descripcion: {muebles.descripcion}
+                                Descripción: {licores.description}
                             </Text>
                             <Text color='#111F5F' fontSize='20px'>
-                                Precio: ${muebles.price}
+                                Precio: ${licores.price}
                             </Text>
                         </Stack>
                     </CardBody>
                     <Divider />
                     <CardFooter className="card-footer">
                         <ButtonGroup spacing='2'>
-                            <ItemCount data={muebles} id={id} />
+                            <ItemCount data={licores} id={id} />
                         </ButtonGroup>
                         <Center>
                             <Button size="md" color="#111F5F" bgColor={"white"}>

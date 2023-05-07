@@ -18,7 +18,7 @@ return(
       </Routes>
   </BrowserRouter>
 </ShoppingCartProvider>
-  );
+  )
 };
 
 export default App; 

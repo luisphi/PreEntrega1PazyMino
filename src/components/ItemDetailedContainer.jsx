@@ -8,22 +8,19 @@ const ItemDetailedContainer = () => {
   const [producto, setProducto] = useState([]);
   useEffect(() => {
     const db = getFirestore();
-    const muebleRef = doc(db, "muebles", `${id}`)
+    const muebleRef = doc(db, "licores", `${id}`)
     getDoc(muebleRef).then((snapshot) => {
       if (snapshot.exists()) {
         setProducto(snapshot.data());
       }
       else {
-        console.log("asdasd")
+        console.log("NADA")
       };
     });
   }, []);
 
-  console.log("asdasd");
-  console.log(producto)
-
   return (
-    <ItemDetailed muebles={producto} id={id} />
+    <ItemDetailed licores={producto} id={id} />
   );
 };
 

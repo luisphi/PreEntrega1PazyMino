@@ -4,7 +4,7 @@ import App from './App'
 import './index.css'
 import { ChakraProvider } from '@chakra-ui/react' 
 import { initializeApp } from "firebase/app";
-import { firebaseConfig } from './firebase'
+import { firebaseConfig } from './services/firebase/firebaseConfig'
 
 initializeApp(firebaseConfig);
 
