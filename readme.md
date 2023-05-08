@@ -10,32 +10,32 @@ Para instalar este proyecto, siga estos pasos:
 2. Abra una terminal en el directorio del proyecto.
 3. Ejecute el siguiente comando para instalar las dependencias:
 
-```bash
 npm install
 
 ## Uso
+
 Para ejecutar el proyecto, siga estos pasos:
 
 1. Abra una terminal en el directorio del proyecto.
 2. Ejecute el siguiente comando:
 
-```bash
 npm run dev
 
 Esto iniciará la aplicación en su navegador predeterminado.
 
 ## Construcción
+
 Para construir el proyecto para producción, siga estos pasos:
 
-Abra una terminal en el directorio del proyecto.
-Ejecute el siguiente comando:
+1. Abra una terminal en el directorio del proyecto.
+2. Ejecute el siguiente comando:
 
-```bash
 npm run build
 
-Esto creará una versión optimizada del proyecto en el directorio dist/.
+Esto creará una versión optimizada del proyecto en el directorio `dist/`.
 
 ## Contribución
+
 Este proyecto está abierto a contribuciones. Si desea contribuir, siga estos pasos:
 
 1. Fork el repositorio.
@@ -44,7 +44,9 @@ Este proyecto está abierto a contribuciones. Si desea contribuir, siga estos pa
 4. Haga una solicitud de extracción.
 
 ## Licencia
+
 Este proyecto está bajo la Licencia MIT. Para obtener más información, consulte el archivo LICENSE.md.
 
 ## Contacto
+
 Si tiene alguna pregunta o problema, no dude en contactarme a través de mi correo electrónico o mi perfil de GitHub.
