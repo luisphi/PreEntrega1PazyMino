@@ -49,7 +49,7 @@ const Order = () => {
                     </Box>
                 </Center>
                 <Box p="1" w="350" h="50">
-                    <p>Numero de order: {orderId}</p>
+                    <p>Número de order: {orderId}</p>
                 </Box>
             </form>
             {alerta}

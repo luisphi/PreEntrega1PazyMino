@@ -41,7 +41,7 @@ const ItemDetailed = ({ licores, id }) => {
                         </ButtonGroup>
                         <Center>
                             <Button size="md" color="#111F5F" bgColor={"white"}>
-                                <Link to="/cart"> Continua con tu compra </Link>
+                                <Link to="/cart"> Continúa con tu compra </Link>
                             </Button>
                         </Center>
                     </CardFooter>
